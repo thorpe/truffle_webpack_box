@@ -9,29 +9,24 @@ This box it our most bare official implementation with Webpack. Includes contrac
     npm install -g truffle
     ```
 
-2. Download the box. This also takes care of installing the necessary dependencies.
+2. Install Ganache globally.
     ```javascript
-    truffle unbox webpack
+    npm install -g ganache-cli
     ```
 
-3. Run the development console.
+3. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
     ```javascript
-    truffle develop
+   truffle compile
+   truffle migrate
     ```
 
-4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
-    ```javascript
-    compile
-    migrate
-    ```
-
-5. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.
+4. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.
     ```javascript
     // Serves the front-end on http://localhost:8080
     npm run dev
     ```
 
-6. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
+5. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
   ```javascript
   // If inside the development console.
   test
@@ -41,10 +36,6 @@ This box it our most bare official implementation with Webpack. Includes contrac
   ```
 
 ## FAQ
-
-* __How do I use this with Ganache?__
-
-    The config you need is already in place in `truffle.js`! Just run your `truffle` commands as usual, but add `--network ganache` to your options. [For more info, check out our documentation on adding network configurations](http://truffleframework.com/docs/advanced/configuration#networks). Depending on the port you're using and whether or not you're using MetaMask, you may also need to update lines 106 and 112 of `app/scripts/index.js`.
 
 * __I'm encountering this error: Error: Can't resolve '../build/contracts/MetaCoin.json'__
 
