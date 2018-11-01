@@ -8,6 +8,7 @@ This box it our most bare official implementation with Webpack. Includes contrac
     ```javascript
     npm install -g truffle
     npm install -g ganache-cli
+    ganache-cli --hostname 0.0.0.0
     ```
 
 2. Install App globally.
@@ -20,9 +21,9 @@ This box it our most bare official implementation with Webpack. Includes contrac
    truffle compile
    truffle migrate
     ```
-4. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.
+4. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated. you have to accept this port in firwall rules
     ```javascript
-    // Serves the front-end on http://localhost:8080
+    // Serves the front-end on http://YOURIPADDRESS:8080
     npm run dev
     ```
 
