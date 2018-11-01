@@ -20,7 +20,10 @@ This box it our most bare official implementation with Webpack. Includes contrac
    truffle compile
    truffle migrate
     ```
-
+    ```bash
+   truffle compile
+   truffle migrate
+    ```
 4. Run the webpack server for front-end hot reloading (outside the development console). Smart contract changes must be manually recompiled and migrated.
     ```javascript
     // Serves the front-end on http://localhost:8080
