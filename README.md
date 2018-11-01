@@ -4,14 +4,15 @@ This box it our most bare official implementation with Webpack. Includes contrac
 
 ## Installation
 
-1. Install Truffle globally.
+1. Install Truffle and Ganache globally.
     ```javascript
     npm install -g truffle
+    npm install -g ganache-cli
     ```
 
-2. Install Ganache globally.
+2. Install App globally.
     ```javascript
-    npm install -g ganache-cli
+    npm install
     ```
 
 3. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
