@@ -8,7 +8,7 @@ This box it our most bare official implementation with Webpack. Includes contrac
     ```javascript
     npm install -g truffle
     npm install -g ganache-cli
-    ganache-cli --hostname 0.0.0.0
+    ganache-cli
     ```
 
 2. Install App globally.
