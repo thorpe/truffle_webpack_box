@@ -36,17 +36,3 @@ This box it our most bare official implementation with Webpack. Includes contrac
   // If outside the development console..
   truffle test
   ```
-
-## FAQ
-
-* __I'm encountering this error: Error: Can't resolve '../build/contracts/MetaCoin.json'__
-
-  This means you haven't compiled or migrated your contracts yet. Run `truffle develop`, `compile` and `migrate` first.
-
-  Full error:
-
-  ```
-  ERROR in ./app/main.js
-  Module not found: Error: Can't resolve '../build/contracts/MetaCoin.json' in '/Users/tim/Documents/workspace/Consensys/test3/app'
-   @ ./app/main.js 11:16-59
-  ```
