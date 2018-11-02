@@ -13,6 +13,7 @@ This box it our most bare official implementation with Webpack. Includes contrac
 
 2. Install App globally.
     ```javascript
+    git clone https://github.com/thorpe/truffle_webpack_box.git
     cd truffle_webpack_box
     npm install
     ```
