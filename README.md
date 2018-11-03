@@ -11,7 +11,7 @@ This box it our most bare official implementation with Webpack. Includes contrac
     ganache-cli
     ```
 
-2. Install App globally.
+2. Download and Install Application.
     ```javascript
     git clone https://github.com/thorpe/truffle_webpack_box.git
     cd truffle_webpack_box
